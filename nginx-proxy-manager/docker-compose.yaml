@@ -1,0 +1,15 @@
+version: "3.5"
+services:
+  nginx:
+    restart: always
+    image: "jc21/nginx-proxy-manager:latest"
+    volumes:
+      - ${MOUNT_PATH}/data:/data:rw
+      - ${MOUNT_PATH}/letsencrypt:/etc/letsencrypt:rw
+      - ${MOUNT_PATH}/logrotate/nginx-proxy-manager:/etc/logrotate.d/nginx-proxy-manager:rw
+    ports:
+      - "${MANAGE_PORT}:81"
+      - "80:80"
+      - "443:443"
+    environment:
+      - DISABLE_IPV6='true'
