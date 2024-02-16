@@ -6,6 +6,7 @@ services:
     environment:
       - USER_UID=1000
       - USER_GID=1000
+      - DISABLE_REGISTRATION=true
     restart: always
     labels:
         net.unraid.docker.icon: "https://docs.gitea.io/images/gitea.png"
@@ -15,4 +16,4 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "3005:3000"
-      - "222:22"
+      # - "222:22"
