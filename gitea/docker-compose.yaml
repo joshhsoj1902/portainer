@@ -7,6 +7,7 @@ services:
       - USER_UID=1000
       - USER_GID=1000
       - DISABLE_REGISTRATION=true
+      - REGISTER_MANUAL_CONFIRM=true
     restart: always
     labels:
         net.unraid.docker.icon: "https://docs.gitea.io/images/gitea.png"
