@@ -1,4 +1,4 @@
 version: "3"
 services:
   hello-world:
-    image: hello-world
+    image: hello-world@sha256:6352af1ab4ba4b138648f8ee88e63331aae519946d3b67dae50c313c6fc8200f
