@@ -2,7 +2,7 @@ version: "3"
 
 services:
   server:
-    image: gitea/gitea:1.22.5@sha256:f93616d5c50a774a0e94980683636377cb93d9b022ddf6c21264d678e2539298
+    image: gitea/gitea:1.22.6@sha256:538658de667c5d098a274f2f63aa6ec891d88f670cdd5282cf27221ba747dda4
     environment:
       - USER_UID=1000
       - USER_GID=1000
