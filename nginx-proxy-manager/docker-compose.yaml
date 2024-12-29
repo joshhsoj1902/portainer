@@ -2,7 +2,7 @@ version: "3.5"
 services:
   nginx:
     restart: always
-    image: "jc21/nginx-proxy-manager:latest@sha256:b7168e5f6828cbbd3622fa19965007e4611cf42b5f3c603008377ffd45a4fe00"
+    image: "jc21/nginx-proxy-manager:latest@sha256:170f1974d8fc8ca245bcfae5590bc326de347b19719972bf122400fb13dfa42c"
     volumes:
       - ${MOUNT_PATH}/data:/data:rw
       - ${MOUNT_PATH}/letsencrypt:/etc/letsencrypt:rw
